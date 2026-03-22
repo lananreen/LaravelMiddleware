@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/legal-age', function () {
+    return "You are an adult!";
+})->middleware('checkAge');
